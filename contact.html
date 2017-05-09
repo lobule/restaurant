@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>Contact Us</title>
+
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">	
+		<link rel="stylesheet" type="text/css" href="css/restaurantStyles.css">
+	</head>
+
+     <script src="js/validate.js"></script>
+	<body>
+		<div class="header">
+			<h1>Pubby Pub Pubs</h1>
+			<ul class="nav nav-tabs">
+				<li><a href="index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span></a></li>		
+				<li><a href="menu.html">Menu</a></li>		
+				<li class="active"><a href="contact.html">Contact</a></li>	
+			</ul>
+			<div class="spacer"></div>
+		</div>
+
+		<!-- main content -->
+		<form name="contact" action="index.html" onsubmit="return validateForm()" method="POST">
+               <div class="container-fluid">
+                    <div class="row">
+                         <div class="row stripe">
+                              <div class="col-sm-12">
+                                   <h2>Questions or Comments?</h2>
+                                   <p>  We would love to hear from you! 
+                                        Submit this form with your inquiry 
+                                        and we'll get back to you within 48 hours 
+                                        unless it takes longer.</p>
+                              </div>
+                         </div>
+                         <div class="col-xs-12 col-sm-3 prompt">
+                              <div>Name:</div>
+                         </div>
+                         <div class="col-xs-12 col-sm-6 response">
+                              <input type="text" name="Name">
+                         </div>
+                         <div class="col-xs-12-col-sm-3"></div>
+                    </div>	
+                    <div class="row">
+                         <div class="col-xs-12 col-sm-3 prompt">
+                              <div>Email:</div>
+                         </div>
+                         <div class="col-xs-12 col-sm-6 response">
+                              <input type="text" name="Email">
+                         </div>
+                         <div class="col-xs-12-col-sm-3"></div>
+                    </div>	
+                    <div class="row">
+                         <div class="col-xs-12 col-sm-3 prompt">
+                              <div>Phone:</div>
+                         </div>
+                         <div class="col-xs-12 col-sm-6 response">
+                              <input type="text" name="Phone">
+                         </div>
+                         <div class="col-xs-12-col-sm-3"></div>
+                    </div>
+                    <div class="row">
+                         <div class="col-xs-12 col-sm-3 prompt">
+                              <div>Reason for Inquiry:</div>
+                         </div>
+                         <div class="col-xs-12 col-sm-6 response">
+                              <select name="Reason">
+                                   <option value="Catering">Catering</option>
+                                   <option value="Private">Private Party</option>
+                                   <option value="Feedback">Feedback</option>
+                                   <option value="Other">Other</option>
+                              </select>
+                         </div>
+                         <div class="col-xs-12-col-sm-3"></div>
+                    </div>	
+                    <div class="row">
+                         <div class="col-xs-12 col-sm-3 prompt">
+                              <div>Additional Information:</div>
+                         </div>
+                         <div class="col-xs-12 col-sm-6 response"><textarea name="AdditionalInfo"></textarea></div>
+                         <div class="col-xs-12-col-sm-3"></div>
+                    </div>
+                    <div class="row">
+                         <div class="col-xs-12 col-sm-3 prompt">
+                              <div>Have you been to the restaurant? </div>
+                         </div>
+                         <div class="col-xs-12 col-sm-6 response">
+                              <div>
+                                   <input type="radio" name="Type" value="No" class="radio" checked>No
+                                   <input type="radio" name="Type" value="Yes" class="radio">Yes
+                              </div>
+                         </div>
+                         <div class="col-xs-12-col-sm-3"></div>
+                    </div>
+                    <div class="row">
+                         <div class="col-xs-12 col-sm-3 prompt">
+                              <div>Best days to contact you:</div>
+                         </div>
+                         <div class="col-xs-12 col-sm-6 response">
+                              <div>
+                                   <input type="checkbox" name="Day" value="M" class="check">M
+                                   <input type="checkbox" name="Day" value="T" class="check">T
+                                   <input type="checkbox" name="Day" value="W" class="check">W
+                                   <input type="checkbox" name="Day" value="Th" class="check">Th
+                                   <input type="checkbox" name="Day" value="F" class="check">F
+                              </div>
+                         </div>
+                         <div class="col-xs-12-col-sm-3"></div>
+                    </div>
+                   <div class="row last-row">
+                         <div class="col-xs-12 col-sm-3"></div> 
+                         <div class="col-xs-12 col-sm-6 response">
+                              <input type="submit" value="Send Request" id="submit"></div>
+                         <div class="col-xs-12-col-sm-3"></div>
+                    </div>
+               </div>  <!-- container-fluid -->
+          </form>
+          <div class="spacer"></div>
+
+          <div class="footer">
+               <hr>
+               <p>40 West Main St., Townsville, ON, A3Z 9N1</p>
+               <p>416-555-4155</p>
+          </div>
+     </body>
+</html>

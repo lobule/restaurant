@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css?family=Shrikhand');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+/***** Site-wide styles *****/
+
+h1, h2, h3 {font-family: 'Shrikhand', cursive;}
+
+h4, p, a, form {font-family: 'Raleway', sans-serif;}
+
+h1 {font-size: 2.5em;}
+
+h2 {font-size: 2.0em;}
+
+h3 {font-size: 1.5em;}
+
+h4 {
+     font-size: 1.2em;
+     font-style: italic;
+} 
+
+h1, h2, h3, h4, p, a {text-align: center;}
+
+.row {
+     background-color: #0086b3;
+     color: white;
+}
+
+.spacer {padding:10px}
+
+/***** Navigation *****/
+
+.header a {
+	color: black;
+	font-weight: normal;
+	text-decoration: underline;
+}
+
+.header a:visited {color: #0086b3;} 
+
+.header a:hover {font-weight: bold;}
+
+.header a:active {text-decoration: none;}
+
+/***** Home page styling *****/
+
+#photo {
+     padding: 20px;
+     margin: 0px;
+}
+
+#photo img {
+     width: 100%;
+     border-radius: 20px;
+}
+
+#info {
+     padding: 2.5% 20px;
+     font-size: 1em;
+}
+
+@media (min-width: 768px){
+     #photo {padding-right: 0px;}
+     #info {font-size: 1.65vw;}
+}
+
+@media (max-width: 767px){
+     #photo {padding-bottom: 0px;}
+}
+
+/* Carousel */
+
+.carousel {
+     margin: 20px;
+     border-radius: 20px;
+}
+
+.carousel-control {
+     border-radius: 20px;
+}
+
+.carousel-img {
+     min-height: 200px;
+     width: auto;
+     border-radius: 20px;
+     filter: brightness(50%);
+     background-size: cover;
+     background-position: center;
+}
+
+@media (min-width: 768px){
+     .carousel-caption {
+          font-size: 1.2em;
+     }
+}
+
+/***** Menu page styling *****/
+
+.stripe {
+     border-top: double 5px #0086b3;
+     border-bottom: double 5px #0086b3;
+     background: white;
+     color: #0086b3;
+     padding: 5px;
+     margin: 10px 0;
+}
+
+.menu-item p {padding: 0 10%;}
+
+.price {
+	font-size: 1.2em;
+	font-weight: bold;
+	margin-top: -0.5em;
+}
+
+/***** Contact page styling *****/
+
+@media (max-width: 767px) { 
+     form .prompt {
+          text-align: left;
+          padding: 5px 20px;
+     }
+     form .response {padding: 5px 20px;}
+}
+
+@media (min-width: 768px) {
+     form .prompt {
+          text-align: right;
+          padding: 15px 20px;
+     }
+     form .response {padding: 9px 20px;}
+}
+
+form .last-row {padding-bottom: 20px;}
+
+/* Text Inputs & Dropdowns & Send */
+
+form input, form textarea, form select, #submit {
+     width: 100%;
+}
+
+form input, form textarea, form select {
+     color: black;
+     margin: 0 auto;
+     padding: 3px;
+     font-size: 1em;
+}
+
+form textarea {
+     height: 120px;
+     margin-bottom: -12px;
+}
+
+form select, #submit {
+     margin-top: 3px;
+     height: 2.0em;
+}
+
+/* Radios & Checkboxes */
+
+form .check {
+     width: 25px;
+}
+
+form .check:not(:first-child) {
+     margin-left: 10%;
+}
+
+form .radio {
+     width: 25px;
+     display: inline;
+}
+
+form .radio:nth-child(2) {
+     margin-left: 35%;
+}
+
+@media (min-width: 768px) {
+     form .check, form .radio {
+          margin-top: 10px;
+          background: red;
+     }
+}
+
